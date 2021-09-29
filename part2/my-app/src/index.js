@@ -22,6 +22,11 @@ const notes = [
   }
 ]
 
+const result = notes.map(note => note.id);
+// Konsoliin tulostuu [1, 2, 3] eli map muodostaa uuden taulukon,
+//onka jokainen alkio on saatu alkuperäisen taulukon notes alkioista.
+console.log(result);
+
 ReactDOM.render(
   <App notes={notes} />,
   document.getElementById('root')
