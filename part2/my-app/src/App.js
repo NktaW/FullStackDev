@@ -1,7 +1,9 @@
 import React from "react";
+import Note from './components/Note';
 
-const App = (props) => {
-  const {notes} = props;
+
+
+const App = ({notes}) => {
 
   return (
     <div>
@@ -9,9 +11,7 @@ const App = (props) => {
       <ul>
         {notes.map(note =>
         //Key atribuutti, React päättelee miten sen tulee päivittää komponentin generoimaa näkymää. 
-        <li key={note.id}>
-          {note.content}
-        </li>
+        <Note key={note.id} note={note} />
         )}
       </ul>
     </div>
