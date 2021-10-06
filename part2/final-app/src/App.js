@@ -1,6 +1,8 @@
 import React from "react";
 import Course from './components/Course';
 
+
+
 const App = () => {
   const course = {
     name: 'Half Stack application development',
@@ -31,6 +33,8 @@ const App = () => {
       </ul>
       <ul>
       {course.parts.map(course => <Course key={course.id}  course={course} />)}
+      </ul>
+      <ul>
       </ul>
     </div>
   )

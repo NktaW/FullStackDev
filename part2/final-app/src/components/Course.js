@@ -5,7 +5,7 @@ const Course = ({course}) => {
     console.log('jippii...', course);
     return (
         <div>
-            {course.name} {course.exercises} {course.id}
+            {course.name} {course.exercises}
         </div>
     
     )
