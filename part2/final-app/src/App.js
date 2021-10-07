@@ -25,7 +25,8 @@ const App = () => {
       }
     ]
   }
-
+  //Using higer order function here...
+  //Reduce function to get the sum of all exercises
   const total = course.parts.reduce((s, p) => {
     console.log("morjesta", s, p)
     return s + p.exercises
