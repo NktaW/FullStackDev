@@ -1,10 +1,11 @@
 {
   "name": "notebackend",
   "version": "1.0.0",
-  "description": "",
   "main": "node index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "author": "Baked Potato",
   "license": "ISC",
@@ -13,5 +14,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": ""
 }
