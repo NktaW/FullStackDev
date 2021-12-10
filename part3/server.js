@@ -4,6 +4,7 @@
 // mutta syntaksiltaan hieman erilaisessa muodossa.
 
 //const http = require('http')
+const { response } = require('express')
 const express = require('express')
 const app = express()
 
@@ -47,3 +48,16 @@ console.log(`Server runnin on port ${PORT}`)
 
 //Use npm start in bash to start the server
 //Server will be running on port 3001 (localhost:3001)
+
+
+//Toteutetaan seuraavaksi resurssin poistava route. 
+//Poisto tapahtuu tekemällä HTTP DELETE -pyyntö resurssin urliin:
+
+app.delete('api/notes/:id', (request, response) => {
+    const id = Number(request.param.id)
+    notes = notes.filter(note => note.id !== id)
+
+    response.status(204).end()
+    
+
+})
